@@ -1,0 +1,1221 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.M.C Locação de Caçambas - Aluguel de Caçambas para Entulho | São Paulo</title>
+    <meta name="description" content="Aluguel de caçambas para entulho em São Paulo. Entregas em até 2 horas, valores promocionais a partir de R$180. Caçambas autorizadas pela SLU.">
+    <meta name="keywords" content="aluguel caçamba, caçamba entulho, banheiro químico, São Paulo, entrega rápida, SLU autorizada">
+    <!-- Google tag (gtag.js) --> <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-17361606763"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17361606763'); </script>
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Event snippet for Visualização de página conversion page --> <script> gtag("event", "conversion", { "send_to": "AW-17361606763/6zmJCMXG3_IaEOuw1NZA", "value": 1.0, "currency": "BRL" }); </script>
+    <style>
+        :root {
+            --primary-color: #1e3c72;
+            --secondary-color: #2a5298;
+            --accent-color: #ffd700;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --shadow-light: 0 5px 15px rgba(0,0,0,0.1);
+            --shadow-medium: 0 10px 30px rgba(0,0,0,0.15);
+            --gradient-primary: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            overflow-x: hidden;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 3.5rem;
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        .btn {
+            background: var(--accent-color);
+            color: var(--primary-color);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: var(--shadow-light);
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: #ffed4e;
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .btn-secondary {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        .btn-secondary:hover {
+            background: var(--secondary-color);
+        }
+
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 3px 3px 5px #777;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        /* Header */
+        .header {
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: 0.8rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            margin-right: 8px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-menu a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+            font-size: 0.9rem;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            left: 0;
+            bottom: -5px;
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .contact-btn {
+            font-size: 0.9rem;
+            padding: 0.8rem 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--gradient-primary);
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            margin-top: 70px;
+            position: relative;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 0 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .promo-text {
+            background: rgba(255, 215, 0, 0.9);
+            color: var(--primary-color);
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            font-weight: 600;
+            margin-top: 2rem;
+            display: inline-block;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 4rem 0;
+            background: var(--white);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s ease;
+            background: var(--light-bg);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .gallery-item-content {
+            padding: 1.2rem;
+            background: var(--white);
+        }
+
+        .gallery-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .gallery-item p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 4rem 0;
+            background: var(--light-bg);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-light);
+            text-align: center;
+            transition: all 0.4s ease;
+            border-bottom: 5px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-medium);
+            border-color: var(--accent-color);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .service-card p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+
+        /* About Section */
+        .about {
+            padding: 4rem 0;
+            background: var(--white);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .about-text p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .about-image {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow-medium);
+            background: var(--light-bg);
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 4rem;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 4rem 0;
+            background: var(--gradient-primary);
+            color: var(--white);
+        }
+
+        .features .section-title {
+            color: var(--white);
+        }
+
+        .features .section-title::after {
+            background-color: var(--accent-color);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(255,255,255,0.08);
+            border-radius: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .feature-item:hover {
+            background: rgba(255,255,255,0.15);
+        }
+
+        .feature-item i {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .feature-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .feature-item p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 4rem 0;
+            background: var(--light-bg);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-light);
+            text-align: center;
+        }
+
+        .testimonial-card .stars {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .testimonial-card .author {
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 4rem 0;
+            background: var(--white);
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            justify-items: center;
+        }
+
+        .contact-info {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-light);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-right: 1rem;
+            width: 30px;
+            text-align: center;
+            margin-top: 0.2rem;
+        }
+
+        .contact-item div strong {
+            display: block;
+            font-size: 1rem;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .contact-item div {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 3rem 0 1.5rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+            font-size: 1.3rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            margin-bottom: 0.6rem;
+            display: block;
+            font-size: 0.9rem;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-color);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: flex-start;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1.5rem;
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .header {
+                padding: 0.6rem 0;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .header .contact-btn {
+                display: none;
+            }
+            
+            .logo {
+                font-size: 1.5rem;
+            }
+            
+            .hero {
+                margin-top: 60px;
+                min-height: 90vh;
+                padding: 1rem 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+                margin-bottom: 1rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .promo-text {
+                font-size: 0.8rem;
+                padding: 0.8rem 1rem;
+                margin-top: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+            
+            .gallery {
+                padding: 3rem 0;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .gallery-item img {
+                height: 180px;
+            }
+            
+            .services {
+                padding: 3rem 0;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .service-card {
+                padding: 1.5rem;
+            }
+            
+            .service-card h3 {
+                font-size: 1.2rem;
+            }
+            
+            .service-icon {
+                font-size: 2rem;
+            }
+            
+            .about {
+                padding: 3rem 0;
+            }
+            
+            .about-text h2 {
+                font-size: 1.8rem;
+            }
+            
+            .about-image {
+                height: 250px;
+            }
+            
+            .about-image img {
+                height: 250px;
+            }
+            
+            .features {
+                padding: 3rem 0;
+            }
+            
+            .features-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+            }
+            
+            .feature-item {
+                padding: 1.2rem;
+            }
+            
+            .testimonials {
+                padding: 3rem 0;
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .contact {
+                padding: 3rem 0;
+            }
+            
+            .contact-info {
+                padding: 1.5rem;
+            }
+            
+            .contact-info h3 {
+                font-size: 1.5rem;
+            }
+            
+            .footer {
+                padding: 2rem 0 1rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 1.5rem;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 15px;
+                right: 15px;
+                font-size: 25px;
+            }
+            
+            .btn {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 0.5rem 0;
+            }
+            
+            .logo {
+                font-size: 1.3rem;
+            }
+            
+            .hero {
+                margin-top: 50px;
+                min-height: 85vh;
+                padding: 0.5rem 0;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero p {
+                font-size: 0.9rem;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+            }
+            
+            .gallery-item img {
+                height: 160px;
+            }
+            
+            .about-image {
+                height: 200px;
+            }
+            
+            .about-image img {
+                height: 200px;
+            }
+            
+            .service-card {
+                padding: 1.2rem;
+            }
+            
+            .contact-info {
+                padding: 1.2rem;
+            }
+            
+            .promo-text {
+                font-size: 0.75rem;
+                padding: 0.6rem 0.8rem;
+            }
+        }
+
+        /* Animations */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/551131975056?text=Olá! Gostaria de solicitar um orçamento para aluguel de caçamba." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-dumpster"></i> R.M.C Caçambas
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="https://wa.me/551131975056?text=Olá! Gostaria de solicitar um orçamento para aluguel de caçamba." class="btn contact-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> Solicitar Orçamento
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Aluguel de Caçambas para Entulho</h1>
+            <p>A solução ideal para a remoção de entulhos e resíduos. Entregas em até 2 horas e atendimento imediato!</p>
+            <div class="hero-cta">
+                <a href="https://wa.me/551131975056?text=Olá! Gostaria de solicitar um orçamento para aluguel de caçamba." class="btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Solicitar Orçamento Grátis
+                </a>
+            </div>
+            <div class="promo-text">
+                🎯 VALORES PROMOCIONAIS PARA TODO O ESTADO DE SÃO PAULO!<br>
+                💰 CAÇAMBAS PEQUENAS A PARTIR DE R$180,00
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Nossa Frota e Serviços</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in-up">
+                    <img src="images/cacamba_profissional.jpg" alt="Caçamba profissional moderna">
+                    <div class="gallery-item-content">
+                        <h3>Caçambas Profissionais</h3>
+                        <p>Equipamentos modernos e bem conservados para sua obra.</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="images/caminhao_entrega.jpg" alt="Caminhão de entrega moderno">
+                    <div class="gallery-item-content">
+                        <h3>Tecnologia Moderna</h3>
+                        <p>Caçambas com design moderno e alta capacidade.</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="images/banheiro_quimico.jpg" alt="Banheiro químico profissional">
+                    <div class="gallery-item-content">
+                        <h3>Banheiros Químicos</h3>
+                        <p>Soluções completas para higiene em obras e eventos.</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="images/entrega_rapida.jpg" alt="Serviço de entrega rápida">
+                    <div class="gallery-item-content">
+                        <h3>Serviço Eficiente</h3>
+                        <p>Entrega rápida e coleta pontual para sua comodidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-dumpster"></i>
+                    </div>
+                    <h3>Caçambas de 3m³</h3>
+                    <p>Ideais para pequenas reformas, limpeza de quintais e descarte de entulho residencial. Temos diversos tamanhos!</p>
+                    <a href="https://wa.me/551131975056?text=Gostaria de orçamento para caçamba 3m³" class="btn" target="_blank">Solicitar Orçamento</a>
+                </div>
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Caçambas de 5m³</h3>
+                    <p>Perfeitas para obras de médio porte, reformas comerciais e construções residenciais.</p>
+                    <a href="https://wa.me/551131975056?text=Gostaria de orçamento para caçamba 5m³" class="btn" target="_blank">Solicitar Orçamento</a>
+                </div>
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Caçambas de 7m³</h3>
+                    <p>Para grandes obras, construções comerciais e projetos industriais de grande volume.</p>
+                    <a href="https://wa.me/551131975056?text=Gostaria de orçamento para caçamba 7m³" class="btn" target="_blank">Solicitar Orçamento</a>
+                </div>
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-toilet"></i>
+                    </div>
+                    <h3>Aluguel de Banheiro Químico</h3>
+                    <p>Oferecemos também aluguel de banheiros químicos para sua obra ou evento.</p>
+                    <a href="https://wa.me/551131975056?text=Gostaria de orçamento para banheiro químico" class="btn" target="_blank">Solicitar Orçamento</a>
+                </div>
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Entrega Rápida</h3>
+                    <p>Entregamos a caçamba com o menor prazo estimado, em até 2 horas! Solicite já!</p>
+                    <a href="https://wa.me/551131975056?text=Preciso de entrega urgente" class="btn" target="_blank">Entrega Urgente</a>
+                </div>
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Caçambas Autorizadas pela SLU</h3>
+                    <p>Evite multas na sua obra. Todas as nossas caçambas possuem autorização do SLU.</p>
+                    <a href="https://wa.me/551131975056?text=Quero saber sobre autorização SLU" class="btn" target="_blank">Saiba Mais</a>
+                </div>
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Descarte no Local Correto</h3>
+                    <p>Seus resíduos são levados para um lugar próprio de descarte de entulhos, autorizado pela entidade competente.</p>
+                    <a href="https://wa.me/551131975056?text=Quero saber sobre descarte ecológico" class="btn" target="_blank">Descarte Ecológico</a>
+                </div>
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Atendimento Imediato</h3>
+                    <p>Atendimento especializado disponível para esclarecer suas dúvidas. Aberto hoje: 07:00 – 17:00.</p>
+                    <a href="https://wa.me/551131975056?text=Preciso de atendimento imediato" class="btn" target="_blank">Falar Agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in-up">
+                    <h2>Sobre a R.M.C Locação de Caçambas</h2>
+                    <p>Com mais de 22 anos de experiência no mercado, a R.M.C Locação de Caçambas LTDA - ME é referência em aluguel de caçambas para entulho na região. Fundada em 07 de março de 2003, nossa empresa nasceu da necessidade de oferecer um serviço de qualidade, confiável e ambientalmente responsável.</p>
+                    <p>Trabalhamos com uma frota moderna e bem conservada, garantindo que sua obra tenha sempre o equipamento adequado para o descarte correto dos resíduos de construção civil.</p>
+                    <p>Nossa missão é facilitar o gerenciamento de resíduos em obras de todos os tamanhos, desde pequenas reformas residenciais até grandes empreendimentos comerciais e industriais.</p>
+                    <p><strong>CNPJ:</strong> 05.556.299/0001-89<br>
+                    <strong>Sede:</strong> São Paulo, SP<br>
+                    <strong>Fundada em:</strong> 07 de março de 2003</p>
+                    <a href="https://wa.me/551131975056?text=Quero conhecer mais sobre a empresa" class="btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Fale Conosco
+                    </a>
+                </div>
+                <div class="about-image fade-in-up">
+                    <img src="images/empresa_sobre.jpg" alt="Caçamba de entulho da R.M.C Locação de Caçambas">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Por que escolher a R.M.C Caçambas?</h2>
+            <div class="features-grid">
+                <div class="feature-item fade-in-up">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Licenciada e Regularizada</h3>
+                    <p>Empresa totalmente licenciada pelos órgãos competentes</p>
+                </div>
+                <div class="feature-item fade-in-up">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Segurança Garantida</h3>
+                    <p>Equipamentos seguros e operação responsável</p>
+                </div>
+                <div class="feature-item fade-in-up">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Preços Competitivos</h3>
+                    <p>Melhor custo-benefício da região</p>
+                </div>
+                <div class="feature-item fade-in-up">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Sustentabilidade</h3>
+                    <p>Compromisso com o meio ambiente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O que nossos clientes dizem</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in-up">
+                    <div class="stars">★★★★★</div>
+                    <p>"Excelente serviço! Entregaram a caçamba no mesmo dia e a coleta foi pontual. Recomendo!"</p>
+                    <div class="author">- João Silva, Construtor</div>
+                </div>
+                <div class="testimonial-card fade-in-up">
+                    <div class="stars">★★★★★</div>
+                    <p>"Preço justo e atendimento excepcional. A Pablito Caçambas é nossa parceira há anos."</p>
+                    <div class="author">- Maria Santos, Arquiteta</div>
+                </div>
+                <div class="testimonial-card fade-in-up">
+                    <div class="stars">★★★★★</div>
+                    <p>"Profissionais competentes e caçambas sempre limpas. Serviço de qualidade!"</p>
+                    <div class="author">- Carlos Oliveira, Empreiteiro</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info fade-in-up">
+                    <h3>Informações de Contato</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Telefone:</strong><br>
+                            (11) 3197-5056
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>E-mail:</strong><br>
+                            contato@rmccacambas.com.br
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Endereço:</strong><br>
+                            Rua das Caçambas, 123<br>
+                            São Paulo - SP
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Horário de Funcionamento:</strong><br>
+                            Segunda a Sexta: 07:00 às 17:00<br>
+                            Sábado: 07:00 às 12:00
+                        </div>
+                    </div>
+                    <a href="https://wa.me/551131975056?text=Olá! Gostaria de mais informações sobre os serviços." class="btn" target="_blank" style="width: 100%; margin-top: 20px; text-align: center;">
+                        <i class="fab fa-whatsapp"></i> Fale Conosco no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>R.M.C Caçambas</h3>
+                <p>Sua solução completa para aluguel de caçambas e descarte de entulho em São Paulo.</p>
+                <div class="social-links">
+                    <a href="https://wa.me/551131975056" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Serviços</h3>
+                <a href="#servicos">Caçambas 3m³</a>
+                <a href="#servicos">Caçambas 5m³</a>
+                <a href="#servicos">Caçambas 7m³</a>
+                <a href="#servicos">Aluguel de Banheiro Químico</a>
+                <a href="#servicos">Descarte Ecológico</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                 <p><i class="fas fa-phone"></i> (11) 3197-5056</p>
+                <p><i class="fas fa-envelope"></i> contato@rmccacambas.com.br</p>
+                <p><i class="fas fa-map-marker-alt"></i> São Paulo - SP</p>
+                <p><i class="fas fa-clock"></i> Seg-Sex: 07:00-17:00</p>
+                <p><i class="fas fa-clock"></i> Sáb: 07:00-12:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>� 2024 R.M.C Locação de Caçambas LTDA - ME. Todos os direitos reservados. | Aluguel de Caçambas São Paulo | Banheiro Químico SP</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in-up elements
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // SEO and Analytics tracking (placeholder)
+        function trackEvent(action, category) {
+            // Google Analytics tracking would go here
+            console.log(`Event tracked: ${action} in ${category}`);
+        }
+
+        // Track WhatsApp clicks
+        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+            link.addEventListener('click', () => {
+                trackEvent('whatsapp_click', 'contact');
+            });
+        });
+    </script>
+
+
+
+</body></html>
